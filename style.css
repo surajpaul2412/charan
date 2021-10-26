@@ -161,6 +161,7 @@ section h2{
 .bg-green-dark {
     background: #06592F;
 }
+.bg-gray{background: #efefef;border-radius: 8px;}
 .bg-brown {
     background: #C26639;
     border-radius: 14px;

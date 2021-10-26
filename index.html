@@ -15,6 +15,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap" rel="stylesheet">
+    <!-- slick slider -->
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
     <!-- custom css -->
     <style>
         body, html{
@@ -29,9 +33,10 @@
         .font-weight-800{
             font-weight: 800 !important;
         }
+        a{text-decoration: none;}
+        a:hover{text-decoration: none;}
     </style>
 </head>
-
 <body>
     <section class="d-block mx-auto" style="max-width: 450px;">
         <nav class="navbar bg-white py-2">
@@ -41,14 +46,19 @@
         <div>
             <img src="img/banner.jpeg" width="100%">
         </div>
-        <div class="px-3 pb-4 mb-5">
+        <div class="px-3 pb-4 mb-4">
             <h4 class="heading text-black pt-4 lh-1 font-weight-bold" align="center">
                 <span style="color: #128141;">देहात लाया है उत्पादों की होम डिलीवरी सुविधा, अब आपके शहर में</span>
             </h4>
-            <div class="content text-dark pt-2" align="left" style="line-height: 1.5;text-align: justify;">
-                देहात द्वारा सैटेलाइट आधारित गेहूं फसल बीमा योजना किसानों की सहायता और सहयोग के लिए बनाई गई है। इसके तहत किसान फसलों पर होने वाले किसी भी तरह के नुकसान से खुद को बचा सकते हैं और निश्चिंत होकर खेती कर सकते हैं । <br/><br/>
-                यह योजना फसल नुक्सान में किसानों को आर्थिक तौर पर मदद कर, उन्हें खेती में सुदृढ़ एवं समर्थ करती है ।<br/>
-            </div>
+            <section class="my-4">
+                <div class="slider slider-nav">
+                    <div><img src="img/products/1.png" class="bg-gray py-3" width="100%"></div>
+                    <div><img src="img/products/2.png" class="bg-gray py-3" width="100%"></div>
+                    <div><img src="img/products/1.png" class="bg-gray py-3" width="100%"></div>
+                    <div><img src="img/products/2.png" class="bg-gray py-3" width="100%"></div>
+                    <div><img src="img/products/1.png" class="bg-gray py-3" width="100%"></div>
+                </div>
+            </section>
             <div class="content text-dark pt-2">
                 <h5 class="font-weight-bold pt-3" align="center" style="color: #128141;">
                     Benefits of hyperlocal :
@@ -75,19 +85,19 @@
                 </div>                
             </div>
         </div>
-        <footer class="bg-dark pb-5" style="overflow-x: hidden;">
+        <footer class="bg-dark pb-4" style="overflow-x: hidden;">
             <div class="row pb-5">
-             <div class="col-md-2 col-12" align="center">
+             <div class="col-12" align="center">
                 <img src="https://www.agrevolution.in/assets/frontend/images/logo-inner.svg" alt="Dehaat Logo"
-                class="d-block mx-auto" width="35%">
+                class="d-block mx-auto pl-4" width="40%">
              </div>
-             <div class="col-md-5 col-12" align="center">
+             <div class="col-12" align="center">
                 <ul class="navbar-nav">
                    <li class="nav-item"><a href="callto:1800 1036 110" class="nav-link text-white"> 1800 1036 110</a></li>
                    <li class="nav-item"><a href="mailto:contact@agrevolution.in" class="nav-link text-white"> contact@agrevolution.in</a></li>
                 </ul>
              </div>
-             <div class="col-md-5 pt-2 col-12 align-items-center d-flex justify-content-center" align="center">
+             <div class="pt-3 col-12 align-items-center d-flex justify-content-center" align="center">
                 <a href="https://www.facebook.com/DeHaatTM" class="text-light" ><i class="fab fa-facebook-f mx-4" style="font-size: 25px; " ></i></a>
                 <a href="https://www.instagram.com/dehaat/" class="text-light"><i class="fab fa-instagram  mx-4" style="font-size: 25px; "  ></i></a>
                 <a href="https://twitter.com/DeHaatTM" class="text-light"><i class="fab fa-twitter mx-4 "  style="font-size: 25px; " ></i></a>
@@ -103,8 +113,24 @@
         </div>
     </section>
 
+    <!-- floating card -->
+   <div id="float-card">
+      <a class="close-float-card">
+         <img src="img/cros.png" width="30px" class="close-float-card-img">
+      </a>
+      <div class="card bg-green-dark border-rad-14 pt-3" style="width: 140px;">
+         <a href="form.html" class="lead-form text-green2 hindi font-w-500" data-toggle="modal" data-target="#lead-form">
+            <img src="img/chacha.png" class="d-block mx-auto" width="62%">
+            <div class="bg-brown p-3" align="center">                
+               <div class="text-white bold card-bottom-txt hindi font-w-500">आइए, रजिस्टर करें</div>
+            </div>
+         </a>
+      </div>
+   </div>
+
     <!-- jQuery -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.js"></script>
     <script>
         // Hide Card onLoad
         $('#float-card').hide();
@@ -116,6 +142,15 @@
             $('#float-card').hide(500);
             $('#float-button').show(500);
         });
+
+        // slick
+        $('.slider-nav').slick({
+           slidesToShow: 3,
+           slidesToScroll: 1,
+           asNavFor: '.slider-for',
+           dots: true,
+           focusOnSelect: true
+         });
     </script>
 </body>
 
