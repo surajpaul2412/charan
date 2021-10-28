@@ -46,7 +46,7 @@
         <div>
             <img src="img/banner.jpeg" width="100%">
         </div>
-        <div class="px-3 pb-4 mb-4">
+        <div class="px-3 pb-4 mb-4 overflow-x-hidden">
             <h4 class="heading text-black pt-4 lh-1 font-weight-bold" align="center">
                 <span style="color: #128141;">देहात लाया है उत्पादों की होम डिलीवरी सुविधा, अब आपके शहर में</span>
             </h4>
@@ -85,8 +85,61 @@
                 </div>                
             </div>
         </div>
-        <footer class="bg-dark pb-4" style="overflow-x: hidden;">
-            <div class="row pb-5">
+        <!-- video slider -->
+        <section class="mt-4 overflow-x-hidden">
+            <div class="slider slider-mov">
+                <div><img src="img/video/4.png" class="br-6" width="100%"></div>
+                <div><img src="img/video/6.png" class="br-6" width="100%"></div>
+                <div><img src="img/video/4.png" class="br-6" width="100%"></div>
+                <div><img src="img/video/6.png" class="br-6" width="100%"></div>
+                <div><img src="img/video/4.png" class="br-6" width="100%"></div>
+                <div><img src="img/video/6.png" class="br-6" width="100%"></div>
+            </div>
+        </section>
+        <!-- form -->
+        <section class="py-5 px-4 bg-light">
+            <h4 class="heading text-black pt-4 lh-1 font-weight-bold" align="center">
+                <span style="color: #128141;">Hyperlocal Delivery :</span>
+            </h4>
+            <form action='https://forms.zohopublic.in/DeHaat/form/HyperlocalDelivery/formperma/F9rOoaNGS-bd8LFrHWqrBxBB-7nugnDpWwvszkRxgl0/htmlRecords/submit' name='form' method='POST' onSubmit='javascript:document.charset="UTF-8"; return zf_ValidateAndSubmit();' accept-charset='UTF-8' enctype='multipart/form-data' id='form'>
+                <input type="hidden" name="zf_referrer_name" value="">
+                <input type="hidden" name="zf_redirect_url" value="">
+                <input type="hidden" name="zc_gad" value="">
+
+                <div class="row">
+                    <div class="form-group col-12 pb-0 mb-0">
+                        <label class="font-weight-bold">नाम <em class="text-danger">*</em></label>
+                    </div>
+                    <div class="form-group col-6">                          
+                        <input type="text" maxlength="255" class="form-control" name="Name_First" fieldType=7 />
+                        <label class="font-weight-bold pt-1">प्रथम</label>
+                    </div>
+                    <div class="form-group col-6">
+                        <input type="text" maxlength="255" class="form-control" name="Name_Last" fieldType=7 />
+                        <label class="font-weight-bold pt-1">अंतिम</label>
+                    </div>
+                    <div class="form-group col-12">
+                        <p id="Name_error" class="text-danger" style="display:none;">Invalid value</p>
+                    </div>
+                </div>
+                
+                <!--Phone-->
+                <label class="font-weight-bold">कॉल नंबर <em class="text-danger">*</em></label>
+                <input type="tel" class="form-control" compname="PhoneNumber" name="PhoneNumber_countrycode" maxlength="20" checktype="c7" value="" phoneFormat="1" isCountryCodeEnabled=false fieldType="11" id="international_PhoneNumber_countrycode" valType="number" phoneFormatType="1"/>
+                <p id="PhoneNumber_error" class="text-danger" style="display:none;">Invalid value</p>
+                
+                <!--Number-->
+                <label class="font-weight-bold mt-4">जिला</label>
+                <input type="text" class="form-control" name="SingleLine" checktype="c1" value="" maxlength="255" fieldType=1 />
+                <p id="SingleLine_error" class="text-danger" style="display:none;">Invalid value</p>
+
+
+                <button class="btn btn-success mt-3 w-100" type="submit">जानकारी जमा करें</button>
+            </form>
+        </section>
+        <!-- footer -->
+        <footer class="bg-dark pt-4 pb-5 overflow-x-hidden">
+            <div class="row">
              <div class="col-12" align="center">
                 <img src="https://www.agrevolution.in/assets/frontend/images/logo-inner.svg" alt="Dehaat Logo"
                 class="d-block mx-auto pl-4" width="40%">
@@ -106,25 +159,26 @@
              </div>
             </div>
         </footer>
-        <div class="px-2 py-1 w-100 bg-white" style="max-width: 450px;position: fixed; bottom: 0%;"  >
+        <!-- <div class="px-2 py-1 w-100 bg-white" style="max-width: 450px;position: fixed; bottom: 0%;"  >
             <a class="btn w-100  text-white py-2" href="form.html" style="background-color: #128141;">
                 मैं देहात अंकुरण फसल बीमा लेना चाहता हूँ
             </a>
-        </div>
+        </div> -->
     </section>
 
     <!-- floating card -->
    <div id="float-card">
       <a class="close-float-card">
-         <img src="img/cros.png" width="30px" class="close-float-card-img">
+         <img src="img/cros.png" width="25px" class="close-float-card-img">
       </a>
-      <div class="card bg-green-dark border-rad-14 pt-3" style="width: 140px;">
-         <a href="form.html" class="lead-form text-green2 hindi font-w-500" data-toggle="modal" data-target="#lead-form">
-            <img src="img/chacha.png" class="d-block mx-auto" width="62%">
-            <div class="bg-brown p-3" align="center">                
-               <div class="text-white bold card-bottom-txt hindi font-w-500">आइए, रजिस्टर करें</div>
+      <div class="card border-rad-14" style="width: 260px;">
+        <div class="bg-light br-14 px-3 pb-3 card" align="left">
+            <div class="py-2 font-weight-bold align-items-center d-flex">
+                <span><img src="img/checked.png" width="20px"></span>
+                <span class="pl-2 text-success2">DeHaat Notify</span>
             </div>
-         </a>
+            <div class="text-dark bold card-bottom-txt hindi font-w-500">मैं देहात अंकुरण फसल बीमा लेना चाहता हूँ</div>
+        </div>
       </div>
    </div>
 
@@ -134,7 +188,6 @@
     <script>
         // Hide Card onLoad
         $('#float-card').hide();
-        // Load after delay
         setTimeout(function () {
             $('#float-card').show(800);
         }, 5000);
@@ -150,7 +203,14 @@
            asNavFor: '.slider-for',
            dots: true,
            focusOnSelect: true
-         });
+        });
+        $('.slider-mov').slick({
+           slidesToShow: 2,
+           slidesToScroll: 1,
+           asNavFor: '.slider-for',
+           dots: false,
+           focusOnSelect: true
+        });
     </script>
 </body>
 

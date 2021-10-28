@@ -162,10 +162,12 @@ section h2{
     background: #06592F;
 }
 .bg-gray{background: #efefef;border-radius: 8px;}
-.bg-brown {
-    background: #C26639;
+.br-14 {
     border-radius: 14px;
 }
+.bg-light{background:#eafaeb !important;}
+.overflow-x-hidden{overflow-x: hidden !important;}
+.card{box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;}
 .font-13{
     font-size: 12px;
 }
@@ -183,7 +185,8 @@ section h2{
 .modal-body{
     padding: 0px !important;
 }
-
+.br-6{border-radius: 8px;}
+.text-success2{color: #33ba7c;}
 
 
 
